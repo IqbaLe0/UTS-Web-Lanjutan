@@ -4,7 +4,8 @@ import HeroPng from "../../assets/logo.png";
 const Hero = () => {
   return (
     <>
-      <div className="min-h-[550px] sm:min-h-[600px] bg-brandDark flex justify-center items-center text-white">
+      {/* Ubah background menjadi hijau tosca */}
+      <div className="min-h-[550px] sm:min-h-[600px] bg-[#1abc9c] flex justify-center items-center text-white">
         <div className="container pb-8 sm:pb-0">
           <div className="grid grid-cols-1 sm:grid-cols-2">
             {/* text content section */}
@@ -18,14 +19,14 @@ const Hero = () => {
                 <span
                   data-aos="zoom-out"
                   data-aos-delay="300"
-                  className="bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/90 font-cursive"
+                  className="bg-clip-text text-transparent bg-[#40E0D0] from-primary to-primary/90 font-cursive"
                 >
                   medicine
                 </span>{" "}
-                in the city. 
+                in the city.
               </h1>
               <div data-aos="fade-up" data-aos-delay="400">
-                <button className="bg-gradient-to-r from-primary to-secondary border-2 border-primary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full">
+                <button className="bg-[#00CED1] from-primary to-secondary border-2 border-primary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full">
                   Health & Wellness Delivered
                 </button>
               </div>
@@ -41,14 +42,14 @@ const Hero = () => {
               />
               <div
                 data-aos="fade-left"
-                className="bg-gradient-to-r from-primary to-secondary p-3 rounded-xl absolute top-10 left-10"
+                className="bg-[#00CED1] from-primary to-secondary p-3 rounded-xl absolute top-10 left-10"
               >
                 <h1 className="text-white">Hey Shopper</h1>
               </div>
               <div
                 data-aos="fade-right"
                 data-aos-offset="0"
-                className="bg-gradient-to-r from-primary to-secondary p-3 rounded-xl absolute bottom-10 right-10"
+                className="bg-[#00CED1] from-primary to-secondary p-3 rounded-xl absolute bottom-10 right-10"
               >
                 <h1 className="text-white">Best Medicine</h1>
               </div>
