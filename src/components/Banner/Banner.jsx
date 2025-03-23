@@ -35,13 +35,14 @@ const Banner = () => {
                   data-aos="fade-up"
                   className="text-3xl sm:text-4xl font-bold font-cursive"
                 >
-                  Obat Berkualitas Premium
+                  Chemical Life
                 </h1>
                 <p
                   data-aos="fade-up"
                   className="text-sm text-gray-500 tracking-wide leading-5"
                 >
-                  Dapatkan obat terbaik dengan kualitas terjamin untuk menjaga kesehatan Anda. Kami menyediakan berbagai pilihan obat dengan formulasi terpercaya dan efektivitas tinggi.
+                  Website ini berfokus pada bidang kesehatan dan farmasi, khususnya dalam penyediaan obat-obatan berkualitas premium. Kami berkomitmen untuk menyediakan berbagai pilihan obat dengan formulasi terpercaya dan efektivitas tinggi, 
+                  sehingga pelanggan dapat memperoleh produk yang aman dan sesuai dengan kebutuhan kesehatan mereka.
                 </p>
 
                 <div className="grid grid-cols-2 gap-6">
