@@ -1,69 +1,101 @@
 import React from "react";
-import Img2 from "../../assets/coffee2.png";
+
+// Mengimpor semua gambar dari folder Medicine
+const images = import.meta.glob("../../assets/Medicine/*.png", { eager: true, as: "url" });
+
+// Mengonversi images menjadi objek yang lebih mudah digunakan
+const imageMap = Object.fromEntries(
+  Object.entries(images).map(([path, url]) => {
+    const fileName = path.split("/").pop().replace(".png", "").toLowerCase();
+    return [fileName, url];
+  })
+);
+
 const ServicesData = [
   {
     id: 1,
-    img: Img2,
-    name: "Espresso",
+    name: "Paracetamol",
     description:
-      "Lorem ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit amet ipsum dolor sit amet.",
+      "Digunakan untuk meredakan demam dan nyeri ringan hingga sedang, seperti sakit kepala, sakit gigi, atau nyeri otot.",
     aosDelay: "100",
   },
   {
     id: 2,
-    img: Img2,
-    name: "Americano",
+    name: "Amoxicillin",
     description:
-      "Lorem ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit amet ipsum dolor sit amet",
+      "Antibiotik yang digunakan untuk mengobati berbagai infeksi bakteri, seperti infeksi saluran pernapasan, infeksi kulit, dan infeksi saluran kemih.",
     aosDelay: "300",
   },
   {
     id: 3,
-    img: Img2,
-    name: "Cappuccino",
+    name: "Omeprazole",
     description:
-      "Lorem ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit amet ipsum dolor sit amet",
+      "Obat yang digunakan untuk mengatasi masalah lambung, seperti asam lambung tinggi, GERD, dan tukak lambung.",
+    aosDelay: "500",
+  },
+  {
+    id: 4,
+    name: "Bioderma",
+    description:
+      "Obat yang digunakan untuk mengatasi masalah lambung, seperti asam lambung tinggi, GERD, dan tukak lambung.",
+    aosDelay: "500",
+  },
+  {
+    id: 5,
+    name: "Chanca Piedra",
+    description:
+      "Obat yang digunakan untuk mengatasi masalah lambung, seperti asam lambung tinggi, GERD, dan tukak lambung.",
+    aosDelay: "500",
+  },
+  {
+    id: 6,
+    name: "Cetyl Pure",
+    description:
+      "Obat yang digunakan untuk mengatasi masalah lambung, seperti asam lambung tinggi, GERD, dan tukak lambung.",
     aosDelay: "500",
   },
 ];
+
 const Services = () => {
   return (
     <>
       <span id="services"></span>
-      <div className="py-10">
+      <div className="py-10 pb-20">
         <div className="container">
           {/* Heading section  */}
           <div className="text-center mb-20">
             <h1 className="text-4xl font-bold font-cursive text-gray-800">
-              Best Coffee For You
+              Best Medicine Product
             </h1>
           </div>
 
           {/* Services Card section  */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 md:gap-5 place-items-center">
-            {ServicesData.map((service) => (
-              <div
-                data-aos="fade-up"
-                data-aos-delay={service.aosDelay}
-                className="rounded-2xl bg-white hover:bg-primary hover:text-white relative shadow-xl duration-high group max-w-[300px]"
-              >
-                <div className="h-[122px]">
-                  <img
-                    src={service.img}
-                    alt=""
-                    className="max-w-[200px] block mx-auto transform -translate-y-14
-                  group-hover:scale-105 group-hover:rotate-6 duration-300"
-                  />
+            {ServicesData.map((service) => {
+              const imageSrc = imageMap[service.name.toLowerCase()] || imageMap["default"];
+              return (
+                <div
+                  key={service.id}
+                  data-aos="fade-up"
+                  data-aos-delay={service.aosDelay}
+                  className="rounded-2xl bg-white hover:bg-primary hover:text-white relative shadow-xl duration-high group max-w-[300px]"
+                >
+                  <div className="h-[150px] flex justify-center items-center">
+                    <img
+                      src={imageSrc}
+                      alt={service.name}
+                      className="max-w-[180px] block mx-auto transform mt-4 group-hover:scale-105 group-hover:rotate-6 duration-300"
+                    />
+                  </div>
+                  <div className="p-4 text-center">
+                    <h1 className="text-xl font-bold">{service.name}</h1>
+                    <p className="text-gray-500 group-hover:text-white duration-high text-sm line-clamp-2">
+                      {service.description}
+                    </p>
+                  </div>
                 </div>
-                <div className="p-4 text-center">
-                  <div className="w-full "></div>
-                  <h1 className="text-xl font-bold">{service.name}</h1>
-                  <p className="text-gray-500 group-hover:text-white duration-high text-sm line-clamp-2">
-                    {service.description}
-                  </p>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

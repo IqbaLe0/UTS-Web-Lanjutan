@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
-import FooterBg from "../../assets/website/coffee-footer.jpg";
+import FooterBg from "../../assets/website/medicine-banner.jpg";
 
 const FooterLinks = [
   {
@@ -41,11 +41,10 @@ const Footer = () => {
               className="font-semibold tracking-widest text-2xl sm:text-3xl font-cursive
 "
             >
-              Coffee Cafe
+              Chemical Life
             </a>
             <p className="  pt-4">
-              Crafted Coffee, Cozy Vibes, Unforgettable Moments – Your Perfect
-              Espresso Escape
+            Trusted Medicine, Expert Care, and Better Health – Your Partner for a Healthier Life.
             </p>
             <a
               href="https://www.youtube.com/channel/UC1H-a1MKEFXRiFlGNLcy7gQ"

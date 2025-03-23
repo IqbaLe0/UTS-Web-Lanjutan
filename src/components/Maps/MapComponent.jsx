@@ -12,10 +12,10 @@ const backgroundStyle = {
 
 // Alamat lokasi yang ingin ditampilkan
 const location = {
-  name: "Coffee Cafe",
-  address: "Jl. Contoh No.123, Kota, Negara",
+  name: "Chemical Life",
+  address: "Jl. Cendrawasih No.123, Manokwari, Indonesia",
   mapEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126915.71821013302!2d106.7495932!3d-6.2087634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTInNTYuNyJTIDEwNsKwNDQnMTQuNiJF!5e0!3m2!1sen!2sid!4v1713658491562!5m2!1sen!2sid", // Ganti dengan URL iframe Google Maps sesuai lokasi
+    "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d792.0984648372391!2d134.06911367133824!3d-0.836415896303816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1742734766400!5m2!1sid!2sid", // Ganti dengan URL iframe Google Maps sesuai lokasi
 };
 
 const MapComponent = () => {

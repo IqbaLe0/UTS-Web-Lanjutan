@@ -1,8 +1,7 @@
 import React from "react";
-import BannerImg from "../../assets/coffee-white.png";
-import { GrSecure } from "react-icons/gr";
-import { IoFastFood } from "react-icons/io5";
-import { GiFoodTruck } from "react-icons/gi";
+import BannerImg from "../../assets/logo3.png";
+import { FaTemperatureHigh, FaCapsules} from "react-icons/fa";
+import { GiPill, GiStomach} from "react-icons/gi";
 import BgImg from "../../assets/website/coffee-texture.jpg";
 
 const bgImage = {
@@ -36,38 +35,44 @@ const Banner = () => {
                   data-aos="fade-up"
                   className="text-3xl sm:text-4xl font-bold font-cursive"
                 >
-                  Premium Blend Coffee
+                  Obat Berkualitas Premium
                 </h1>
                 <p
                   data-aos="fade-up"
                   className="text-sm text-gray-500 tracking-wide leading-5"
                 >
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Eaque reiciendis inventore iste ratione ex alias quis magni at
-                  optio
+                  Dapatkan obat terbaik dengan kualitas terjamin untuk menjaga kesehatan Anda. Kami menyediakan berbagai pilihan obat dengan formulasi terpercaya dan efektivitas tinggi.
                 </p>
 
                 <div className="grid grid-cols-2 gap-6">
                   <div className="space-y-5">
                     <div data-aos="fade-up" className="flex items-center gap-3">
-                      <GrSecure className="text-2xl h-12 w-12 shadow-sm p-3 rounded-full bg-red-100 " />
-                      <span>Premium Coffee</span>
+                      <FaTemperatureHigh className="text-2xl h-12 w-12 shadow-sm p-3 rounded-full bg-red-100 " />
+                      <span>Obat Demam & Nyeri</span>
                     </div>
                     <div
                       data-aos="fade-up"
                       data-aos-delay="300"
                       className="flex items-center gap-3"
                     >
-                      <IoFastFood className="text-2xl h-12 w-12 shadow-sm p-3 rounded-full bg-orange-100 " />
-                      <span>Hot Coffee</span>
+                      <FaCapsules className="text-2xl h-12 w-12 shadow-sm p-3 rounded-full bg-orange-100 " />
+                      <span>Antibiotik</span>
                     </div>
                     <div
                       data-aos="fade-up"
                       data-aos-delay="500"
                       className="flex items-center gap-3"
                     >
-                      <GiFoodTruck className="text-4xl h-12 w-12 shadow-sm p-3 rounded-full bg-yellow-100" />
-                      <span>Cold Coffee</span>
+                      <GiStomach className="text-4xl h-12 w-12 shadow-sm p-3 rounded-full bg-yellow-100" />
+                      <span>Obat Lambung</span>
+                    </div>
+                    <div
+                      data-aos="fade-up"
+                      data-aos-delay="500"
+                      className="flex items-center gap-3"
+                    >
+                      <GiPill className="text-4xl h-12 w-12 shadow-sm p-3 rounded-full bg-yellow-100" />
+                      <span>Vitamin & Suplemen</span>
                     </div>
                   </div>
                   <div
@@ -75,12 +80,10 @@ const Banner = () => {
                     className="border-l-4 border-primary/50 pl-6 space-y-2"
                   >
                     <h1 className="text-2xl font-semibold font-cursive ">
-                      Tea Lover
+                    Pilihan Obat Unggulan
                     </h1>
                     <p className="text-sm text-gray-500">
-                      Much like writing code, brewing the perfect cup of tea
-                      requires patience, precision, and a dash of passion to
-                      create a comforting blend of flavors.
+                    Sama seperti meracik obat yang tepat, memilih produk kesehatan yang sesuai membutuhkan ketelitian dan pemahaman yang baik. Kami siap membantu Anda mendapatkan solusi kesehatan terbaik! 
                     </p>
                   </div>
                 </div>
