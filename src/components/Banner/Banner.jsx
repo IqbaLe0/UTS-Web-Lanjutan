@@ -25,8 +25,8 @@ const Banner = () => {
               <div data-aos="zoom-in">
                 <img
                   src={BannerImg}
-                  alt="biryani img"
-                  className="max-w-[430px] w-full mx-auto drop-shadow-[10px_-10px_12px_rgba(0,0,0,1)] spin"
+                  alt="Pills"
+                  className="max-w-[430px] w-full mx-auto drop-shadow-[10px_-10px_12px_rgba(0,0,0,1)]"
                 />
               </div>
               {/* text content section */}

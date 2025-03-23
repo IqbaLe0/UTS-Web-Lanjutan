@@ -18,7 +18,7 @@ const Hero = () => {
                 <span
                   data-aos="zoom-out"
                   data-aos-delay="300"
-                  class="bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/90 font-cursive"
+                  className="bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/90 font-cursive"
                 >
                   medicine
                 </span>{" "}
@@ -32,15 +32,12 @@ const Hero = () => {
             </div>
             {/* Image section */}
             <div
-              data-aos="zoom-in"
-              data-aos-duration="300"
-              className="min-h-[450px] flex justify-center items-center relative order-1 sm:order-2 "
+              className="min-h-[450px] flex justify-center items-center relative order-1 sm:order-2"
             >
               <img
-                data-aos-once="true"
                 src={HeroPng}
                 alt="biryani img"
-                className="w-[300px] sm:w-[450px] sm:scale-125 mx-auto spin "
+                className="w-[300px] sm:w-[450px] sm:scale-125 mx-auto"
               />
               <div
                 data-aos="fade-left"
