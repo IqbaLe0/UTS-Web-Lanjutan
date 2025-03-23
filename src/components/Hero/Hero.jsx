@@ -1,7 +1,9 @@
 import React from "react";
 import HeroPng from "../../assets/logo.png";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="min-h-[550px] sm:min-h-[600px] bg-brandDark flex justify-center items-center text-white">
@@ -25,9 +27,12 @@ const Hero = () => {
                 in the city. 
               </h1>
               <div data-aos="fade-up" data-aos-delay="400">
-                <button className="bg-gradient-to-r from-primary to-secondary border-2 border-primary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full">
-                  Health & Wellness Delivered
-                </button>
+              <button
+                onClick={() => navigate("/cart")}
+                className="bg-gradient-to-r from-primary to-secondary border-2 border-primary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full"
+              >
+                Health & Wellness Delivered
+              </button>
               </div>
             </div>
             {/* Image section */}
