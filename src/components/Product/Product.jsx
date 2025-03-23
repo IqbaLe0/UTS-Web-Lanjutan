@@ -1,7 +1,7 @@
 import React from "react";
 
 // Mengimpor semua gambar dari folder Medicine
-const images = import.meta.glob("../../assets/Medicine/*.png", { eager: true, as: "url" });
+const images = import.meta.glob("../../assets/Product/*.png", { eager: true, as: "url" });
 
 // Mengonversi images menjadi objek yang lebih mudah digunakan
 const imageMap = Object.fromEntries(
@@ -11,7 +11,7 @@ const imageMap = Object.fromEntries(
   })
 );
 
-const ServicesData = [
+const ProductData = [
   {
     id: 1,
     name: "Paracetamol",
@@ -54,12 +54,40 @@ const ServicesData = [
       "Obat yang digunakan untuk mengatasi masalah lambung, seperti asam lambung tinggi, GERD, dan tukak lambung.",
     aosDelay: "500",
   },
+  {
+    id: 7,
+    name: "CLA Core",
+    description:
+      "Obat yang digunakan untuk mengatasi masalah lambung, seperti asam lambung tinggi, GERD, dan tukak lambung.",
+    aosDelay: "500",
+  },
+  {
+    id: 8,
+    name: "Ibuprofen",
+    description:
+      "Obat yang digunakan untuk mengatasi masalah lambung, seperti asam lambung tinggi, GERD, dan tukak lambung.",
+    aosDelay: "500",
+  },
+  {
+    id: 9,
+    name: "Poo Pourri",
+    description:
+      "Obat yang digunakan untuk mengatasi masalah lambung, seperti asam lambung tinggi, GERD, dan tukak lambung.",
+    aosDelay: "500",
+  },
+  {
+    id: 10,
+    name: "Umcka ColdCare",
+    description:
+      "Obat yang digunakan untuk mengatasi masalah lambung, seperti asam lambung tinggi, GERD, dan tukak lambung.",
+    aosDelay: "500",
+  },
 ];
 
-const Services = () => {
+const Product = () => {
   return (
     <>
-      <span id="services"></span>
+      <span id="product"></span>
       <div className="py-10 pb-20">
         <div className="container">
           {/* Heading section  */}
@@ -71,26 +99,26 @@ const Services = () => {
 
           {/* Services Card section  */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 md:gap-5 place-items-center">
-            {ServicesData.map((service) => {
+            {ProductData.map((product) => {
               const imageSrc = imageMap[service.name.toLowerCase()] || imageMap["default"];
               return (
                 <div
-                  key={service.id}
+                  key={product.id}
                   data-aos="fade-up"
-                  data-aos-delay={service.aosDelay}
+                  data-aos-delay={product.aosDelay}
                   className="rounded-2xl bg-white hover:bg-primary hover:text-white relative shadow-xl duration-high group max-w-[300px]"
                 >
                   <div className="h-[150px] flex justify-center items-center">
                     <img
                       src={imageSrc}
-                      alt={service.name}
+                      alt={product.name}
                       className="max-w-[180px] block mx-auto transform mt-4 group-hover:scale-105 group-hover:rotate-6 duration-300"
                     />
                   </div>
                   <div className="p-4 text-center">
-                    <h1 className="text-xl font-bold">{service.name}</h1>
+                    <h1 className="text-xl font-bold">{product.name}</h1>
                     <p className="text-gray-500 group-hover:text-white duration-high text-sm line-clamp-2">
-                      {service.description}
+                      {product.description}
                     </p>
                   </div>
                 </div>
@@ -103,4 +131,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Product;
