@@ -1,6 +1,6 @@
 import React from "react";
-import Logo from "../../assets/website/logo.png";
 import { FaCoffee } from "react-icons/fa";
+import Logo from "../../assets/website/logo.png";
 
 const Menu = [
   {
@@ -32,7 +32,7 @@ const Navbar = () => {
                 className="font-bold text-2xl sm:text-3xl flex justify-center items-center gap-2 tracking-wider font-cursive"
               >
                 <img src={Logo} alt="Logo" className="w-14" />
-                Chemical Life
+                Gay
               </a>
             </div>
 
