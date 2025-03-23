@@ -4,29 +4,30 @@ import Slider from "react-slick";
 const TestimonialData = [
   {
     id: 1,
-    name: "Dilshad",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    name: "Budi Santoso",
+    text: "Pelayanan cepat dan produk yang saya beli sangat berkualitas. Sangat puas dengan FarmaMart!",
     img: "https://picsum.photos/101/101",
   },
   {
     id: 2,
-    name: "Sabir ali",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    name: "Siti Aminah",
+    text: "Sangat membantu! Apoteker ramah dan saya mendapatkan obat yang sesuai dengan kebutuhan saya.",
     img: "https://picsum.photos/102/102",
   },
   {
     id: 3,
-    name: "Dipankar kumar",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    name: "Ahmad Fauzan",
+    text: "FarmaMart memberikan pengalaman belanja online yang mudah dan praktis, saya rekomendasikan ke teman-teman.",
     img: "https://picsum.photos/104/104",
   },
   {
-    id: 5,
-    name: "Satya Narayan",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    id: 4,
+    name: "Rina Kartika",
+    text: "Saya suka karena banyak promo menarik dan produk vitamin lengkap, pasti akan belanja lagi!",
     img: "https://picsum.photos/103/103",
   },
 ];
+
 
 const Testimonials = () => {
   var settings = {
