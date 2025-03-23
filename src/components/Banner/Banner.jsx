@@ -2,7 +2,7 @@ import React from "react";
 import BannerImg from "../../assets/logo3.png";
 import { FaTemperatureHigh, FaCapsules} from "react-icons/fa";
 import { GiPill, GiStomach} from "react-icons/gi";
-import BgImg from "../../assets/website/coffee-texture.jpg";
+import BgImg from "../../assets/website/bg.jpg";
 
 const bgImage = {
   backgroundImage: `url(${BgImg})`,

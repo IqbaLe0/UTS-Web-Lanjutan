@@ -1,5 +1,5 @@
 import React from "react";
-import BgPng from "../../assets/website/coffee-beans-bg.png";
+import BgPng from "../../assets/website/banner-about.jpg";
 
 const backgroundStyle = {
   backgroundImage: `url(${BgPng})`,

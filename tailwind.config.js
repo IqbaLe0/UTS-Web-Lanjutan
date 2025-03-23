@@ -10,9 +10,9 @@ export default {
         cursive2: ["Sriracha", "cursive"],
       },
       colors: {
-        primary: "#E5D9F2",
-        secondary: "#CDC1FF",
-        brandDark: "#A294F9",
+        primary: "#C2FFC7",
+        secondary: "#9EDF9C",
+        brandDark: "#62825D",
         dark: "#1e1e1e",
         light: "#f5f5f5",
       },
